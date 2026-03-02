@@ -3,7 +3,7 @@
 Dieses Projekt implementiert einen numerischen Löser basierend auf der **Finite-Elemente-Methode (FEM)** zur Lösung von eindimensionalen Differentialgleichungen (z. B. Poisson-Gleichung) in C++.
 
 ## 📖 Beschreibung
-Das Programm berechnet die Verschiebung $u$ in einem Stab der Länge $L$, der einer konstanten Quellkraft $f$ ausgesetzt ist. [cite_start]Es nutzt lineare Ansatzfunktionen und eine Gauß-Integration zur Systemassemblierung[cite: 10, 11, 12].
+Das Programm berechnet die Verschiebung $u$ in einem Stab der Länge $L$, der einer konstanten Quellkraft $f$ ausgesetzt ist. Es nutzt lineare Ansatzfunktionen und eine Gauß-Integration zur Systemassemblierung.
 
 ## 🛠 Technische Merkmale
 * **Symmetrische Matrix**: Effiziente Speicherung der Steifigkeitsmatrix $K$, bei der nur das untere Dreieck gespeichert wird, um Speicherplatz zu sparen.
@@ -16,5 +16,5 @@ Das Programm berechnet die Verschiebung $u$ in einem Stab der Länge $L$, der ei
 ### 1. Kompilierung (C++)
 Sie benötigen einen C++ Compiler (wie GCC oder Clang). Kompilieren Sie den Quellcode mit folgendem Befehl:
 ```bash
-g++ -O3 -o fem_loeser main.cpp
-./fem_loeser
+g++ -O3 -o fem_1d fem_1d.cpp
+./fem_1d.exe
